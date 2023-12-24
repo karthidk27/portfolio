@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jackson Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+<style>
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-out;
+}
+
+.project:hover .project-thumbnail {
+    transform: scale(1.1); /* Adjust the scale factor for the desired enlargement */
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.project-title h2 {
+    margin: 0;
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+}
+
+
+
+</style>
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Karthick Sankaran</a></h1>
+				<span class="position"><a href="#">Front-End Programmer</a> in Chennai</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<!-- <li class="active"><a href="#" data-nav-section="home">Home</a></li> -->
+						<li class="active"><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#" data-nav-section="work">Work</a></li>
+						<!-- <li><a href="#" data-nav-section="services">Services</a></li> -->
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<!-- <li><a href="#" data-nav-section="education">Education</a></li> -->
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						
+						<!-- <li><a href="#" data-nav-section="blog">Blog</a></li> -->
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved. Made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span></small></p>
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+
+
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Us</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><h1>Hi! <br>I'm Karthick</h1> An application's front end is where I excel. I have practical experience building webpages from scratch,
+										constructing forms with different form elements, crafting precise <strong>bootstrap layouts</strong>, putting form <strong>validations</strong> into practice, performing
+										<strong>CRUD</strong> operations, creating <strong>responsive web designs</strong> and images, utilising <strong>attribute directives</strong> for dynamic style changes and <strong>structural
+										directives</strong> for <strong>DOM manipulation</strong>, implementing filters through <strong>built-in pipes</strong>, utilising <strong>services</strong> for <strong>cross-component communications</strong>,
+										protecting paths with <strong>Auth guard</strong>, and implementing <strong>RESTful API integration</strong> with forms.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>I am have worked on<br>5+ projects and completed sucessfully!</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-work" data-section="work">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box">Recent Works In Lixo Technologies</h2>
+						</div>
+					</div>
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<a class="project-link" href="images/img-1.png" target="_blank">
+                              <div class="project">
+                                <div class="project-thumbnail" style="background-image: url(images/img-1.png);"></div>
+                                  <div class="project-overlay">
+                                   <div class="project-title">
+                                      <h2>API Integration</h2><br><h3>Click to Open</h3>
+                                   </div>
+                                </div>
+                              </div>
+                            </a>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<a class="project-link" href="images/img-2.png" target="_blank">
+                              <div class="project">
+                                <div class="project-thumbnail" style="background-image: url(images/img-2.png);"></div>
+                                  <div class="project-overlay">
+                                   <div class="project-title">
+                                      <h2>API Integration</h2><br><h3>Click to Open</h3>
+                                   </div>
+                                </div>
+                              </div>
+                            </a>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<a class="project-link" href="images/img-3.png" target="_blank">
+                              <div class="project">
+                                <div class="project-thumbnail" style="background-image: url(images/img-3.png);"></div>
+                                  <div class="project-overlay">
+                                   <div class="project-title">
+                                      <h2 style="color: white">Front-End OTT Design</h2><br><h3 style="color: white">Click to Open</h3>
+                                   </div>
+                                </div>
+                              </div>
+                            </a>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<a class="project-link" href="images/img-4.png" target="_blank">
+                              <div class="project">
+                                <div class="project-thumbnail" style="background-image: url(images/img-4.png);"></div>
+                                  <div class="project-overlay">
+                                   <div class="project-title">
+                                      <h2 style="color: white">Front-End OTT Design</h2><br><h3 style="color: white">Click to Open</h3>
+                                   </div>
+                                </div>
+                              </div>
+                            </a>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<a class="project-link" href="images/img-5.png" target="_blank">
+                              <div class="project">
+                                <div class="project-thumbnail" style="background-image: url(images/img-5.png);"></div>
+                                  <div class="project-overlay">
+                                   <div class="project-title">
+                                      <h2>Personal Project(home inventory)</h2><br><h3>Click to Open</h3>
+                                   </div>
+                                </div>
+                              </div>
+                            </a>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<a class="project-link" href="images/img-6.png" target="_blank">
+                              <div class="project">
+                                <div class="project-thumbnail" style="background-image: url(images/img-6.png);"></div>
+                                  <div class="project-overlay">
+                                   <div class="project-title">
+                                      <h2>Personal Project(home inventory)</h2><br><h3>Click to Open</h3>
+                                   </div>
+                                </div>
+                              </div>
+                            </a>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			
+
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-3 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+					<div>
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+							<div>
+								<img src="images/HTML5.png" width=80 height=80>
+							</div>
+						</div>
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+							<div>
+								<img src="images/CSS3.png" width=80 height=80>
+							</div>
+						</div>
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+							<div>
+								<img src="images/JavaScript.png" width=80 height=80>
+							</div>
+							
+						</div>
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+							<div>
+								<img src="images/Typescript.png" width=80 height=80>
+							</div>
+						</div>
+						</div>
+						
+						<div>
+						
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+							<div>
+								<img src="images/Angular.png" width=80 height=80>
+							</div>
+						</div>
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+							<div>
+								<img src="images/Bootstrap.png" width=80 height=60>
+							</div>
+						</div>
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+							<div>
+								<img src="images/SQL.png" width=80 height=80>
+							</div>
+						</div>
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+							<div>
+								<img src="images/C.png" width=80 height=80>
+							</div>
+						</div>
+						</div>
+						<div>
+						
+						<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+							<div>
+								<img src="images/ASP.png" width=80 height=80>
+							</div>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Programmer Analyst Trainee at Cognizant</a> <span>Nov 2019- APR 2020</span></h2>
+					                  <p>Completed 6-month program in intensive full-stack software engineering and
+continuously building on tech experience with personal projects.</p>
+					               </div>
+					            </div>
+					         </article>
+
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Software Engineer at Lixo Technologies</a> <span>SEP 2023- Current</span></h2>
+					                  <p>To integrate frontend edit forms with backend data, use rest api calls.Debug application layouts and implement UI interface designs 
+									  desired by clients.When requested by the client, make changes and corrections to the search box, tables, forms, and seat map. create
+									  a thorough admin reports page that offers a summary of the restaurant menu items for a given order ID. With the use of bootstrap 4.5,
+									  CSS3, HTML5, and bootstrap icons, create the entire admin front end user interface.Pie, bar, and line charts may be dynamically shown
+									  using the chart.js package and ng2-charts by utilising backend data.</p>
+					               </div>
+					            </div>
+					         </article>
+
+					       
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+
+
+
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="#">karthisankaran32@gmail.com</a></p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>189 Thiruvengadapuram, Ponneri 601204</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="tel://">+91 9486977806</a></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+<!-- Add this script in the <head> section or before the closing </body> tag -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const projectLinks = document.querySelectorAll('.project-link');
+        projectLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const imageUrl = this.getAttribute('href');
+                openImagePopup(imageUrl);
+            });
+        });
+
+        function openImagePopup(imageUrl) {
+            // You can use a lightbox library or create a custom modal for the popup
+            // Here's a simple example using the window.open method
+            window.open(imageUrl, '_blank', 'width=800,height=600');
+        }
+    });
+</script>
+
+	</body>
+</html>
+
